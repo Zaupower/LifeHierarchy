@@ -62,5 +62,15 @@ class Program
             predator.Eat(rabbit);
             Console.WriteLine("");
         }
+
+        Console.WriteLine("");
+        Console.WriteLine("carnivores");
+        var carnivores = new Carnivore[] { wolf };
+
+        foreach (var carnivore in carnivores)
+        {
+            carnivore.Eat(rabbit);
+            Console.WriteLine("");
+        }
     }
 }
