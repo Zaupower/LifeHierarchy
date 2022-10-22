@@ -25,14 +25,13 @@ class Program
             thing.Species();
         }
 
-        Console.WriteLine("");
-        Console.WriteLine("predators");
-        var predators = new IPredators[] { wolf,bear };
+        Console.WriteLine(" ");
+        Console.WriteLine("animals");
 
-        foreach (var predator in predators)
+        var animals = new Animal[] { rabbit, bear, wolf };
+        foreach (var animal in animals)
         {
-            predator.Eat(rabbit);
-            Console.WriteLine("");
+            animal.Name();
         }
 
         Console.WriteLine("");
@@ -44,19 +43,22 @@ class Program
             herbivore.Eat(grass);
             Console.WriteLine("");
         }
-        Console.WriteLine("");
-        Console.WriteLine("animals");
 
-        var animals = new Animal[] { rabbit, bear, wolf };
-        foreach (var animal in animals)
-        {
-            animal.Name();
-        }
 
         var herbals = new Herbal[] { rose, grass };
         foreach (var herbal in herbals)
         {
             herbal.Name();
+        }
+
+        Console.WriteLine("");
+        Console.WriteLine("predators");
+        var predators = new IPredators[] { wolf, bear };
+
+        foreach (var predator in predators)
+        {
+            predator.Eat(rabbit);
+            Console.WriteLine("");
         }
     }
 }
