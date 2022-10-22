@@ -11,12 +11,12 @@ namespace LifeHierarchy.Organism
     {
         public override void Name()
         {
-            Console.WriteLine(" Rose ");
+            Console.Write(" Rose ");
         }
 
         public override void Species()
         {
-            Console.WriteLine(" Herbivore ");
+            Console.Write(" Herbivore ");
         }
     }
 }
