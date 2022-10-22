@@ -8,7 +8,7 @@ namespace LifeHierarchy.OrganismType
 {
     public abstract class Carnivore : Animal, ICarnivore
     {
-        Animal ICarnivore.Eat()
+        public void Eat(Animal a)
         {
             throw new NotImplementedException();
         }

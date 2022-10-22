@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace LifeHierarchy.OrganismType
 {
-    public abstract class Herbivore : Animal, IHerbivore
+    public interface IHerbivore
     {
-        public void Eat(Herbal a)
-        {
-            throw new NotImplementedException();
-        }
+        void Eat(Herbal a);
     }
 }
