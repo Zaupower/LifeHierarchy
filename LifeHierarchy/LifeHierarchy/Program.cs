@@ -45,6 +45,8 @@ class Program
         }
 
 
+        Console.WriteLine("");
+        Console.WriteLine("herbals");
         var herbals = new Herbal[] { rose, grass };
         foreach (var herbal in herbals)
         {
