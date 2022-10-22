@@ -14,6 +14,14 @@ namespace LifeHierarchy.Organism
             throw new NotImplementedException();
         }
 
+        public override void Eat(Herbal a)
+        {
+            Species();
+            Name();
+            Console.Write("Eating : ");
+            a.Name();
+        }
+
         public override void Name()
         {
             Console.Write(" Rabbit ");

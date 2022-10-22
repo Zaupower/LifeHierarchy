@@ -15,7 +15,7 @@ namespace LifeHierarchy.Organism
 
         public override void Species()
         {
-            Console.WriteLine(" Herbal ");
+            Console.Write(" Herbal ");
         }
     }
 }

@@ -14,14 +14,23 @@ namespace LifeHierarchy.Organism
             throw new NotImplementedException();
         }
 
+        public override void Eat(Animal a)
+        {
+            Species();
+            Name();
+            Console.Write("Eating : ");
+
+            a.Name();
+        }
+
         public override void Name()
         {
-            Console.WriteLine("Wolf"); ;
+            Console.Write(" Wolf "); ;
         }
 
         public override void Species()
         {
-            Console.WriteLine("Carnivore and Predator");
+            Console.Write(" Carnivore and Predator ");
         }
     }
 }

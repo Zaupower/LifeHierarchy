@@ -2,21 +2,53 @@
 
 using LifeHierarchy;
 using LifeHierarchy.Organism;
+using LifeHierarchy.OrganismType;
 
 class Program
 {
     static void Main(string[] args)
     {
 
-        Bear b = new Bear();
-        Wolf w = new Wolf();
-        Rabbit r = new Rabbit();
+        Bear bear = new Bear();
+        Wolf wolf = new Wolf();
+        Rabbit rabbit = new Rabbit();
 
-        var ip = new IPredators[] { w };
+        Grass grass = new Grass(); 
+        Rose rose = new Rose();
 
-        foreach (var predator in ip)
+
+        Console.WriteLine("");
+        Console.WriteLine("predators");
+        var predators = new IPredators[] { wolf,bear };
+
+        foreach (var predator in predators)
         {
-            predator.Eat(r);
+            predator.Eat(rabbit);
+            Console.WriteLine("");
+        }
+
+        Console.WriteLine("");
+        Console.WriteLine("herbivores");
+
+        var herbivores = new IHerbivore[] { rabbit, bear };
+        foreach (var herbivore in herbivores)
+        {
+            herbivore.Eat(grass);
+            Console.WriteLine("");
+        }
+        Console.WriteLine("");
+        Console.WriteLine("animals");
+
+        var animals = new Animal[] { rabbit, bear, wolf };
+        foreach (var animal in animals)
+        {
+            animal.Name();
+        }
+
+        var herbals = new Herbal[] { rose, grass };
+        foreach (var herbal in herbals)
+        {
+            herbal.Name();
         }
     }
 }

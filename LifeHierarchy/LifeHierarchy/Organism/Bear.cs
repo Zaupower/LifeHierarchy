@@ -14,7 +14,7 @@ namespace LifeHierarchy.Organism
         {
             Species();
             Name();
-            Console.WriteLine("Eating : ");
+            Console.Write("Eating : ");
 
             a.Name();
         }
@@ -24,9 +24,17 @@ namespace LifeHierarchy.Organism
             throw new NotImplementedException();
         }
 
+        public override void Eat(Herbal a)
+        {
+            Species();
+            Name();
+            Console.Write("Eating : ");
+            a.Name();
+        }
+
         public override void Name()
         {
-            Console.Write(" BEAR ");
+            Console.Write(" Bear ");
         }
 
         public override void Species()
