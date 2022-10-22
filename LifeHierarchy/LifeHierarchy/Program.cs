@@ -2,6 +2,7 @@
 
 using LifeHierarchy;
 using LifeHierarchy.Organism;
+using LifeHierarchy.OrganismState;
 using LifeHierarchy.OrganismType;
 
 class Program
@@ -16,6 +17,13 @@ class Program
         Grass grass = new Grass(); 
         Rose rose = new Rose();
 
+        Console.WriteLine("");
+        Console.WriteLine("livingThing");
+        var livingThing = new Alive[] { bear, wolf, rabbit, grass, rose };
+        foreach (var thing in livingThing)
+        {
+            thing.Species();
+        }
 
         Console.WriteLine("");
         Console.WriteLine("predators");
