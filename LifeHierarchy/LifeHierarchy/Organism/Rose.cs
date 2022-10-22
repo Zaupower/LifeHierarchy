@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace LifeHierarchy.Organism
 {
-    internal class Rose
+
+    internal class Rose : Herbal
     {
+        public override void Species()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

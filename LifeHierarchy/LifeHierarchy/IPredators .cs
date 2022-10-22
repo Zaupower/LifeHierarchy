@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LifeHierarchy
 {
-    internal class IPredators
+    public interface IPredators
     {
+        void Eat(Animal a);
     }
 }

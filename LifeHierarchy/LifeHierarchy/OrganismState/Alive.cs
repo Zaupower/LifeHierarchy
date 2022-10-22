@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LifeHierarchy.OrganismState
 {
-    internal class Alive
+    public abstract class Alive
     {
+        public abstract void Species();
     }
 }

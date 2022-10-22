@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+
+using LifeHierarchy.Organism;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        Bear b = new Bear();
+       
+    }
+}

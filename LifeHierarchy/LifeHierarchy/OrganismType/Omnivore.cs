@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LifeHierarchy.OrganismType
 {
-    internal class IOmnivore
+    public class Omnivore : Herbivore, ICarnivore
     {
+        public void Eat(Animal a)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
