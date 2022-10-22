@@ -10,6 +10,28 @@ namespace LifeHierarchy.Organism
     //Best aprouch so far, create an third class to bind another two
     public class Bear : Omnivore, IPredators
     {
-       
+        public override void Eat(Animal a)
+        {
+            Species();
+            Name();
+            Console.WriteLine("Eating : ");
+
+            a.Name();
+        }
+
+        public override void Eat(object o)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Name()
+        {
+            Console.Write(" BEAR ");
+        }
+
+        public override void Species()
+        {
+            Console.Write(" Omnivore ");
+        }
     }
 }

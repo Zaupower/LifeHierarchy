@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace LifeHierarchy.Organism
 {
-    internal class Grass : Herbal
+    public class Grass : Herbal
     {
         public override void Name()
         {
-            throw new NotImplementedException();
+            Console.Write(" Grass ");
         }
 
         public override void Species()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(" Herbal ");
         }
     }
 }

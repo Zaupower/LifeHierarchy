@@ -9,14 +9,19 @@ namespace LifeHierarchy.Organism
 {
     public class Wolf : Carnivore, IPredators
     {
-        public Animal Eat()
+        public override void Eat(object o)
         {
             throw new NotImplementedException();
         }
 
+        public override void Name()
+        {
+            Console.WriteLine("Wolf"); ;
+        }
+
         public override void Species()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Carnivore and Predator");
         }
     }
 }

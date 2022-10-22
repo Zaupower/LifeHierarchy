@@ -8,9 +8,6 @@ namespace LifeHierarchy.OrganismType
 {
     public abstract class Herbivore : Animal, IHerbivore
     {
-        public void Eat(Herbal a)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void Eat(Herbal a);
     }
 }

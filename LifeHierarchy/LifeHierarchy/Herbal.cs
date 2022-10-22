@@ -9,5 +9,6 @@ namespace LifeHierarchy
 {
     public abstract class Herbal : Alive
     {
+        public abstract void Name();
     }
 }

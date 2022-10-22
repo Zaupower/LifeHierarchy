@@ -9,9 +9,14 @@ namespace LifeHierarchy.Organism
 
     internal class Rose : Herbal
     {
+        public override void Name()
+        {
+            Console.WriteLine(" Rose ");
+        }
+
         public override void Species()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(" Herbivore ");
         }
     }
 }

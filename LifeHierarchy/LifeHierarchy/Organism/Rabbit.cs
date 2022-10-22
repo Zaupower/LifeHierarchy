@@ -7,16 +7,21 @@ using System.Threading.Tasks;
 
 namespace LifeHierarchy.Organism
 {
-    internal class Rabbit : Herbivore
+    public class Rabbit : Herbivore
     {
-        public override void Eat()
+        public override void Eat(object o)
         {
             throw new NotImplementedException();
         }
 
+        public override void Name()
+        {
+            Console.Write(" Rabbit ");
+        }
+
         public override void Species()
         {
-            throw new NotImplementedException();
+            Console.Write(" Herbivore ");
         }
     }
 }
